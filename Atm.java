@@ -13,7 +13,7 @@ public class Atm{
       System.out.println(nombre);
       System.out.println("Bienvenido a Serrano´s Bank");
       System.out.println("Bienvenido " + nombre);
-      System.out.Println("Menu De Opciones");
+      System.out.println("Menu De Opciones");
       System.out.println("1.- Consultar Saldo");
       System.out.println("2.- Retiros");
       System.out.println("3.- Depositos");
@@ -40,7 +40,19 @@ public class Atm{
       }while(retiro>mretiro); 
       saldo = saldo - retiro;
       System.out.println("Retiro Realisado Con Exito");
-      System.out.println("Tu Saldo Actual Es De: $" + saldo);           
+      System.out.println("Tu Saldo Actual Es De: $" + saldo);
+      break;
+
+      case 3:
+      System.out.println("Depositos");
+      System.out.println("¿Cuanto Deseas Depositar?");
+      ingreso = user.nextFloat();
+      saldo = saldo + ingreso;
+      System.out.println("Tu Saldo Actual Es De: $" + saldo);
+      break;
+
+      case 4: 
+      break;
     }
 
   }
